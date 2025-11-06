@@ -759,6 +759,7 @@
     <button class="filter-btn" data-filter="audifonos">Audífonos</button>
     <button class="filter-btn" data-filter="gadgets">Gadgets</button>
     <button class="filter-btn" data-filter="accesorios">Accesorios</button>
+    <button class="filter-btn" data-filter="almacenamiento">Almacenamiento</button>
   </div>
 
   <!-- 
@@ -813,6 +814,18 @@
         <button class="btn info" onclick="mostrarInfo('Marshall IV')"><span>Más información</span></button>
         <button class="btn review" onclick="verReview('Marshall IV')"><span>Ver Review</span></button>
         <button class="btn buy" onclick="comprar('Marshall IV')"><span>Comprar Ahora</span></button>
+      </div>
+    </div>
+
+    <div class="tarjeta" data-category="gadgets">
+      <img class="tarjeta-img" src="public/images/Productos/Adaptador_UgreenUSB.webp" alt="Adaptador Ugreen Tipo C" />
+      <h3>UGREEN Adaptador USB-C a USB 3.0 OTG</h3>
+      <p class="precio">$229 MXN</p>
+      <p class="descripcion">Adaptador compacto y resistente que te permite conectar memorias USB, teclados, ratones o discos duros directamente a tu smartphone, tablet o laptop con puerto USB-C. Ideal para transferencias rápidas y uso OTG en dispositivos Android, Windows y macOS.</p>
+      <div class="botones">
+        <button class="btn info" onclick="mostrarInfo('Adaptador Ugreen USB C')"><span>Más información</span></button>
+        <button class="btn review" onclick="verReview('Adaptador Ugreen USB C')"><span>Ver Review</span></button>
+        <button class="btn buy" onclick="comprar('Adaptador Ugreen USB C')"><span>Comprar Ahora</span></button>
       </div>
     </div>
   </section>
@@ -991,7 +1004,7 @@
           "🎵 Drivers: 1 dinámico + 1 balance armature por lado",
           "🔉 Impedancia: 18 Ω",
           "🎧 Sensibilidad: 110 dB",
-          "⚡ Rango de frecuencia: 20 Hz – 40 kHz",
+          "⚡ Rango de frecuencia: 20 Hz - 40 kHz",
           "🔌 Conector: 3.5 mm (TRS) con cable desmontable 2 pines (0.75 mm)",
           "🧩 Material: Resina con placa frontal metálica",
           "🧠 Sonido: Perfil equilibrado con énfasis en claridad vocal y escena amplia",
@@ -1030,7 +1043,7 @@
           "🧳 Incluye: Cable USB-C a USB-C y adaptador USB-A",
           "🌡️ Protección: Contra sobrecalentamiento y sobrecarga",
         ],
-        reviewUrl: 'https://youtube.com/shorts/hsOrpq9fm0w?si=DZShtjEYehVTdeJW',
+        reviewUrl: 'https://youtube.com/shorts/O-fNFgB6qnM?si=-KA2p3OQjrzr9_KC',
         buyUrl: 'https://mercadolibre.com/sec/1Yi3qJx'
       },
       'Marshall IV': {
@@ -1042,7 +1055,7 @@
           "⚡ Duración de batería: Hasta 80 horas por carga",
           "⚡ Carga rápida: 15 minutos = 15 horas de uso",
           "🔋 Carga inalámbrica: Compatible con Qi",
-          "🎵 Respuesta de frecuencia: 20 Hz – 20 kHz",
+          "🎵 Respuesta de frecuencia: 20 Hz - 20 kHz",
           "🎧 Impedancia: 32 Ω",
           "🔉 Sensibilidad: 99 dB SPL",
           "🔌 Conector adicional: Jack 3.5 mm (para uso cableado o compartir música)",
@@ -1052,6 +1065,24 @@
         ],
         reviewUrl: 'https://youtube.com/shorts/hsOrpq9fm0w?si=DZShtjEYehVTdeJW',
         buyUrl: 'https://mercadolibre.com/sec/2SCqPHZ'
+      },
+      'Adaptador Ugreen USB C': {
+        imagen: 'public/images/Productos/Adaptador_UgreenUSB.webp',
+        precio: '$229 MXN',
+        specs: [
+          "⚙️ Tipo: Adaptador USB-C a USB-A 3.0",
+          "⚡ Velocidad de transferencia: Hasta 5 Gbps (SuperSpeed USB 3.0)",
+          "🔄 Compatibilidad OTG: Soporta conexión directa a teléfonos y tablets",
+          "🔌 Interfaz de entrada: USB-C macho",
+          "🔌 Interfaz de salida: USB-A hembra",
+          "🧠 Compatibilidad: Windows / macOS / Android / iPadOS / Linux",
+          "🛡️ Material: Aleación de aluminio + conector reforzado",
+          "🧳 Tamaño compacto: Ideal para viajes o trabajo móvil",
+          "📱 Uso recomendado: Conectar memorias USB, DACs, periféricos o accesorios externos",
+          "💡 Plug & Play: No requiere controladores"
+        ],
+        reviewUrl: 'https://youtube.com/shorts/hsOrpq9fm0w?si=DZShtjEYehVTdeJW',
+        buyUrl: 'https://mercadolibre.com/sec/12Yn8tw'
       }
     };
 
@@ -1100,6 +1131,9 @@
         cerrarModal();
       }
     });
+
+    //Polooooo, vas y chingas a tu madre, go fuck yourself
+    //Ptt con amor, la gringa
 
     function verReview(producto) {
       const data = productosData[producto];
